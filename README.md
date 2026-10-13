@@ -20,7 +20,7 @@ I am a master's student in medical informatics. This repository records my learn
 | **Current focus** | Healthcare AI, medical imaging, and human factors |
 | **Research interests** | Medical imaging, patient communication, clinical NLP, decision support, workflow safety |
 | **Core lens** | Evidence, workload, usability, trust calibration, privacy, and failure recovery |
-| **Identity** | **TODO:** add preferred romanized name, confirmed affiliation, expected graduation date, academic email, and ORCID |
+| **Identity** | Chung Yi Cheng (鍾宜成); master's student in Medical Informatics at Taipei Medical University |
 
 ## Featured work
 
@@ -53,7 +53,7 @@ These values are reported only because they are visible in source files in this 
 - Built or documented local AI prototypes spanning retrieval-augmented generation, clinical-table classification, biomedical NLP, and medical imaging.
 - Retained negative results, including hallucinations, citation errors, dataset shift, shortcut learning, and false negatives, as research evidence rather than hiding them.
 - Connected technical performance to questions of workload, usability, privacy, and human oversight.
-- **TODO:** finalize authorship and collaborator attribution for every group project before sharing its claims externally.
+- Authorship and collaborator attribution for group projects remain under review; project pages distinguish documented contributions from unresolved details.
 
 ## Dataset and methodology
 
@@ -114,9 +114,9 @@ Then follow its [setup guide](NLPLLMCLASS/patient_edu_rag/README.md). Authorized
 
 ## Ongoing documentation TODO
 
-- Confirm preferred English/romanized name, affiliation, expected graduation date, contact details, and ORCID.
+- Add an expected graduation date, academic email, and ORCID if relevant and confirmed.
 - Confirm **Your role** and teammate attribution for every group project.
 - Add authoritative dataset, competition, and license links.
 - Translate individual project pages when useful, after factual review.
-- Re-run privacy and claims review before changing the repository from private to public.
+- Re-run privacy and claims review before each public update.
 
