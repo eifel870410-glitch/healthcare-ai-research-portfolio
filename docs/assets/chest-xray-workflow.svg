@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">Chest X-ray prototype workflow</title>
+  <desc id="desc">Public research datasets are preprocessed, passed through two binary convolutional neural networks, displayed in a prototype interface, and reviewed by a person.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4f8195"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="390" rx="24" fill="#f5f9fb"/>
+  <text x="50" y="55" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#14394d">Two-stage chest X-ray prototype</text>
+  <text x="50" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#526e7d">Research workflow only — not a clinical diagnostic system</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <g fill="#ffffff" stroke="#85aebe" stroke-width="2">
+      <rect x="50" y="132" width="190" height="112" rx="18"/>
+      <rect x="285" y="132" width="190" height="112" rx="18"/>
+      <rect x="520" y="112" width="220" height="70" rx="18"/>
+      <rect x="520" y="202" width="220" height="70" rx="18"/>
+      <rect x="785" y="132" width="165" height="112" rx="18"/>
+      <rect x="995" y="132" width="155" height="112" rx="18"/>
+    </g>
+    <g fill="#163c50" text-anchor="middle">
+      <text x="145" y="170" font-size="19" font-weight="700">Public research</text>
+      <text x="145" y="198" font-size="17">NIH + SIIM-ACR</text>
+      <text x="145" y="224" font-size="15" fill="#5b7480">kept outside Git</text>
+
+      <text x="380" y="168" font-size="19" font-weight="700">Preprocessing</text>
+      <text x="380" y="196" font-size="16">grayscale · resize</text>
+      <text x="380" y="220" font-size="16">normalization</text>
+
+      <text x="630" y="142" font-size="18" font-weight="700">Orientation CNN</text>
+      <text x="630" y="166" font-size="15">normal vs. flipped</text>
+
+      <text x="630" y="232" font-size="18" font-weight="700">Pneumothorax CNN</text>
+      <text x="630" y="256" font-size="15">normal vs. positive</text>
+
+      <text x="868" y="174" font-size="19" font-weight="700">Prototype UI</text>
+      <text x="868" y="201" font-size="16">probabilities</text>
+      <text x="868" y="225" font-size="16">and labels</text>
+
+      <text x="1073" y="174" font-size="19" font-weight="700">Human review</text>
+      <text x="1073" y="201" font-size="16">verify quality</text>
+      <text x="1073" y="225" font-size="16">and limitations</text>
+    </g>
+    <g stroke="#4f8195" stroke-width="3" fill="none" marker-end="url(#arrow)">
+      <path d="M240 188 H276"/>
+      <path d="M475 188 H505"/>
+      <path d="M740 147 C765 147 760 174 776 174"/>
+      <path d="M740 237 C765 237 760 208 776 208"/>
+      <path d="M950 188 H986"/>
+    </g>
+  </g>
+  <rect x="50" y="310" width="1100" height="45" rx="12" fill="#173f51"/>
+  <text x="600" y="339" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#ffffff">No DICOM files, patient images, model weights, or case-level outputs are included in this repository.</text>
+</svg>
+

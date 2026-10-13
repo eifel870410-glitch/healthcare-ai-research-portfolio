@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">ASA physical status classification workflow</title>
+  <desc id="desc">A controlled clinical table is cleaned, converted into clinically motivated features, encoded, modeled with a weighted ensemble, and evaluated in a course competition.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#596f9d"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="390" rx="24" fill="#f7f8fc"/>
+  <text x="50" y="55" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#26395f">ASA classification competition workflow</text>
+  <text x="50" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#61708b">Domain-driven feature engineering with explicit leakage and pseudo-labeling caveats</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <g fill="#ffffff" stroke="#a3aed0" stroke-width="2">
+      <rect x="50" y="132" width="170" height="115" rx="18"/>
+      <rect x="260" y="132" width="170" height="115" rx="18"/>
+      <rect x="470" y="132" width="200" height="115" rx="18"/>
+      <rect x="710" y="132" width="200" height="115" rx="18"/>
+      <rect x="950" y="132" width="200" height="115" rx="18"/>
+    </g>
+    <g fill="#26395f" text-anchor="middle">
+      <text x="135" y="168" font-size="19" font-weight="700">Controlled table</text>
+      <text x="135" y="196" font-size="15">labs · surgery</text>
+      <text x="135" y="220" font-size="15">medication · ASA</text>
+
+      <text x="345" y="168" font-size="19" font-weight="700">Clean and parse</text>
+      <text x="345" y="196" font-size="15">height · BMI</text>
+      <text x="345" y="220" font-size="15">missing values</text>
+
+      <text x="570" y="162" font-size="19" font-weight="700">Feature engineering</text>
+      <text x="570" y="190" font-size="15">lab flags · emergency</text>
+      <text x="570" y="214" font-size="15">TF-IDF · dual encoding</text>
+
+      <text x="810" y="162" font-size="19" font-weight="700">Weighted ensemble</text>
+      <text x="810" y="190" font-size="15">CatBoost 40%</text>
+      <text x="810" y="214" font-size="15">XGBoost 30% · LGBM 30%</text>
+
+      <text x="1050" y="168" font-size="19" font-weight="700">Evaluation</text>
+      <text x="1050" y="196" font-size="15">public / private</text>
+      <text x="1050" y="220" font-size="15">leaderboard scores</text>
+    </g>
+    <g stroke="#596f9d" stroke-width="3" fill="none" marker-end="url(#arrow)">
+      <path d="M220 190 H251"/>
+      <path d="M430 190 H461"/>
+      <path d="M670 190 H701"/>
+      <path d="M910 190 H941"/>
+    </g>
+  </g>
+  <rect x="50" y="310" width="1100" height="45" rx="12" fill="#2d416d"/>
+  <text x="600" y="339" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#ffffff">Patient-level rows, submission files, and raw course data remain private pending provenance and license review.</text>
+</svg>
+

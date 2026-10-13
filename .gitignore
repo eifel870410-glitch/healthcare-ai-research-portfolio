@@ -1,0 +1,106 @@
+# This repository uses a public allowlist. Everything at the workspace root is
+# private unless it is explicitly unignored below.
+/*
+
+!/.gitignore
+!/README.md
+!/README.zh-TW.md
+!/README.ja.md
+!/docs/
+!/projects/
+!/scripts/
+!/.github/
+
+# Raw coursework archive imported for local review only. It contains clinical
+# tables, Office metadata, videos, archives, identifiers, and unreviewed code.
+/pytest/
+
+# Selected, data-free source code from the patient education RAG prototype.
+!/NLPLLMCLASS/
+/NLPLLMCLASS/*
+!/NLPLLMCLASS/patient_edu_rag/
+/NLPLLMCLASS/patient_edu_rag/*
+!/NLPLLMCLASS/patient_edu_rag/.env.example
+!/NLPLLMCLASS/patient_edu_rag/.gitignore
+!/NLPLLMCLASS/patient_edu_rag/README.md
+!/NLPLLMCLASS/patient_edu_rag/app.py
+!/NLPLLMCLASS/patient_edu_rag/app_ui.py
+!/NLPLLMCLASS/patient_edu_rag/evaluate.py
+!/NLPLLMCLASS/patient_edu_rag/evaluate2.py
+!/NLPLLMCLASS/patient_edu_rag/review_ui.py
+!/NLPLLMCLASS/patient_edu_rag/requirements.txt
+!/NLPLLMCLASS/patient_edu_rag/.streamlit/
+/NLPLLMCLASS/patient_edu_rag/.streamlit/*
+!/NLPLLMCLASS/patient_edu_rag/.streamlit/config.toml
+!/NLPLLMCLASS/patient_edu_rag/patient_edu_rag/
+/NLPLLMCLASS/patient_edu_rag/patient_edu_rag/*
+!/NLPLLMCLASS/patient_edu_rag/patient_edu_rag/__init__.py
+!/NLPLLMCLASS/patient_edu_rag/patient_edu_rag/config.py
+!/NLPLLMCLASS/patient_edu_rag/patient_edu_rag/data_loader.py
+!/NLPLLMCLASS/patient_edu_rag/patient_edu_rag/generator.py
+!/NLPLLMCLASS/patient_edu_rag/patient_edu_rag/pipeline.py
+!/NLPLLMCLASS/patient_edu_rag/patient_edu_rag/report.py
+!/NLPLLMCLASS/patient_edu_rag/patient_edu_rag/retriever.py
+!/NLPLLMCLASS/patient_edu_rag/scripts/
+/NLPLLMCLASS/patient_edu_rag/scripts/*
+!/NLPLLMCLASS/patient_edu_rag/scripts/build_ehr_from_mimic_demo.py
+!/NLPLLMCLASS/patient_edu_rag/scripts/convert_leaflet_pdfs_to_txt.py
+
+# Defense in depth for files created later inside public directories.
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/node_modules/
+**/.env
+**/.env.*
+!**/.env.example
+**/data/
+**/datasets/
+**/raw_dicom/
+**/chroma_db/
+**/runs/
+**/outputs/
+**/reports/
+**/eval_results/
+**/health_education/
+
+# Raw documents, media, databases, model artifacts, and clinical formats are
+# never committed from this workspace. Publish only a separately reviewed,
+# redacted derivative after deliberately changing this policy.
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.pdf
+*.xls
+*.xlsx
+*.csv
+*.tsv
+*.db
+*.duckdb
+*.sqlite
+*.sqlite3
+*.dcm
+*.dicom
+*.nii
+*.nii.gz
+*.npy
+*.npz
+*.pt
+*.pth
+*.onnx
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.mp4
+*.mov
+*.avi
+*.zip
+*.7z
+
